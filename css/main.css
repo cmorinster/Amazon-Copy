@@ -1,6 +1,7 @@
 *{
     margin: 0;
     padding:0;
+    font-family:Arial, Helvetica, sans-serif
 }
 
 main div{
@@ -29,7 +30,9 @@ main div form{
 
 }
 
-
+form a{
+    text-decoration: none;
+}
 
 img{
 
@@ -53,9 +56,14 @@ div > button {
     margin-left: auto;
     margin-right: auto;
     height: 25px;
+    border-width: thin;
 
 }
 
+form input::placeholder {
+    position: relative;
+    left:1%;
+}
 
 form h1{
     width: 92%;
@@ -63,7 +71,7 @@ form h1{
     left: 4%;
     right: 4%;
     font-weight: normal;
-
+    
 
 }
 
@@ -81,6 +89,7 @@ form label {
 form label a{
     position: relative;
     left: 75%;
+    text-decoration: none;
 }
 
 form button{
@@ -89,18 +98,47 @@ form button{
     position: relative;   
     left: 4%;
     right: 4%;
+    border-width: thin;
     background-color:rgb(244, 183, 93)
     
 }
 
+div>h2 {
+    width: 50%; 
+    text-align: center; 
+    position: relative;
+    margin-bottom: 2%;
+    left:25%;
+    right:25%;
+    border-bottom: solid;
+    border-width: thin;
+    border-color: rgb(160, 160, 160); 
+    line-height: 0.1em;
+    color: rgb(160, 160, 160);
+
+    
+ } 
+
+ h2>span {
+
+    background: #fff;
+    opacity: 1;
+    font-size: 16px;
+    font-weight: normal;
+    
+
+ }
+
 form li::marker {
     content: "➤";
+    color: blue;
   }
 
 form li{
     position: relative;
     left: 10%;
-    padding-top: 2%;
+    padding-top: 4%;
+    padding-bottom: 4%;  
 }
 
 #account{
@@ -108,13 +146,11 @@ width: 100%;
 
 }
   
-    
-
-
 
 form h1{
     flex-grow: 4;
     text-align: left;
+    padding-top: 1%;
 
 }
 
@@ -130,10 +166,14 @@ footer ul{
     display:flex;
     justify-content: center;
     align-items: center;
+    gap: 2%;
+    padding-top: 2%;
+
 }
 
 footer li{
     list-style: none;
+    
     
 }
 
@@ -145,5 +185,6 @@ footer li a{
 footer h2{
     font-size: smaller;
     text-align: center;
+    font-weight: normal;
     
 }
